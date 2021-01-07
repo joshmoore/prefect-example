@@ -1,0 +1,13 @@
+channels:
+  - ome
+  - conda-forge
+  - defaults
+dependencies:
+  - bioformats2raw
+  - python == 3.7.9
+  - zarr >= 2.4.0
+  - pip
+  - pip:
+      - prefect[viz,kubernetes]==0.13.0
+      - pygithub==1.53
+      - git+https://github.com/pangeo-forge/pangeo-forge@0.1.0
